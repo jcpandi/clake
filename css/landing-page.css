@@ -1,0 +1,292 @@
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	font-family: 'Droid Sans', sans-serif;
+}
+h1 {font-size:45px;}
+h3 {font-size:25px;}
+
+ h1, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
+	color:#fff;
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.5);
+
+}
+
+h2, h3 {font-size:30px; font-weight:200;color:orange}
+
+.lead {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.full-circle {
+    background-color:#fff;
+    height:150px;
+    width:150px;
+    -webkit-border-radius:75px;
+    -moz-border-radius:75px;
+	border-radius: 50%;
+	margin-left:25%;
+}
+
+.full-circle a:hover {background-color:blue}
+
+.circle-align{
+	color:#666;padding-top: 40px;
+}
+
+.caption {
+	/*coordinated marking to match cell's padding*/
+	margin-bottom:.5em;
+	/*centered so it doesn't blend in to other content*/
+	text-align:center;
+}
+
+#hover-cap-4col .thumbnail {
+    position:relative;
+    overflow:hidden;    
+}
+
+/*form box*/
+.btn {
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 10px 42px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.form-box{width:400px;height:300px;-webkit-border-radius: 0px 20px 2px 20px;-moz-border-radius: 0px 20px 2px 20px;border-radius: 0px 20px 2px 20px;background-color:#f7f7f7;}
+.caption {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    color:#fff !important;
+}
+/* Image Box Style */
+
+ .box {
+	
+	cursor: pointer;
+	height: 325px;
+	float: left;
+	margin: 5px;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+		-webkit-box-shadow: 1px 1px 1px 1px #ccc;
+		-moz-box-shadow: 1px 1px 1px 1px #ccc;
+		box-shadow: 1px 1px 1px 1px #ccc;
+}
+ .box img {
+	position: absolute;
+	left: 0;
+		-webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;	
+	transition: all 300ms ease-out;
+	width:100%;
+}
+
+/* Caption Common Style */
+ .box .caption {
+	background-color: rgba(0,0,0,0.8);
+	position: absolute;
+	color: #fff;
+	z-index: 100;
+		-webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;	
+		transition: all 300ms ease-out;
+	left: 0;
+}
+
+
+
+/** Caption 2: Full Width & Height **/
+ .box .full-caption {
+	width: 100%;
+	height: 325px;	
+	top: -325px;
+	text-align: left;
+	padding: 15px;
+}
+
+
+ 
+/** Simple Caption :hover Behaviour **/
+ .box:hover .simple-caption {
+	-moz-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+	opacity: 1;
+	transform: translateY(-100%);
+}
+
+/** Full Caption :hover Behaviour **/
+ .box:hover .full-caption {
+	-moz-transform: translateY(100%);
+	-o-transform: translateY(100%);
+	-webkit-transform: translateY(100%);
+	opacity: 1;
+	transform: translateY(100%);
+}
+
+.intro-header {
+	 /*padding-top: 50px; If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	/*padding-bottom: 50px;*/
+	color: #f8f8f8;
+	background: url(../img/bg02.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+}
+
+.intro-message {
+	position: relative;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.intro-message > h1 {
+	margin: 0;
+	font-size: 5em;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.intro-divider {
+	width: 400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.intro-message > h3 {
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 767px) {
+	.intro-message {
+		padding-bottom: 15%;
+	}
+
+	.intro-message > h1 {
+		font-size: 3em;
+	}
+
+	ul.intro-social-buttons > li {
+		display: block;
+		margin-bottom: 20px;
+		padding: 0;
+	}
+
+	ul.intro-social-buttons > li:last-child {
+		margin-bottom: 0;
+	}
+
+	.intro-divider {
+		width: 100%;
+	}
+}
+
+.network-name {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+.content-section-a {
+	background-color: #fff;
+	padding: 15px 0;
+}
+
+.content-section-b {
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+	padding: 50px 0;
+	background:url(../img/base-main.png)repeat;
+	
+}
+
+.section-heading {
+	margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+	border-top: 3px solid #e7e7e7;
+	width: 200px;
+	float: left;
+}
+
+.banner {
+	padding: 100px 0;
+	color: #f8f8f8;
+	background: url(../img/banner-bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.banner h2 {
+	margin: 0;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+	font-size: 3em;
+}
+
+.banner ul {
+	margin-bottom: 0;
+}
+
+.banner-social-buttons {
+	float: right;
+	margin-top: 0;
+}
+
+@media (max-width: 1199px) {
+	ul.banner-social-buttons {
+		float: left;
+		margin-top: 15px;
+	}	
+}
+
+@media (max-width: 767px) {
+	.banner h2 {
+		margin: 0;
+		text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+		font-size: 3em;
+	}
+
+	ul.banner-social-buttons > li {
+		display: block;
+		margin-bottom: 20px;
+		padding: 0;
+	}
+
+	ul.banner-social-buttons > li:last-child {
+		margin-bottom: 0;
+	}	
+}
+
+footer {
+	background-color: #666;
+	padding: 50px 0;
+}
+
+p.copyright {
+	margin: 15px 0 0;
+}
